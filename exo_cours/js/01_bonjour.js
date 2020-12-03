@@ -1,19 +1,19 @@
-var nom = prompt("Quel est votre nom ?");
-var prenom = prompt("Quel est votre prénom ?");
+var nom = window.prompt("Veuillez rentrer votre nom");
+var prenom = window.prompt("Veuillez saisir votre prénom");
 
-alert("Bonjour, " + nom + " " + prenom + ".");
+alert("Bonjour, " + nom + " " + prenom);
 
-/* on peut forcer le type d'un donnée en utilisant, pour les nombres, Number()
+/*
 
-example : 
-        var age = Number(prompt("Quel est votre age ?"));
+    On peut forcer le type d'une donnée en utilisant, pour les nombres, Number()
 
-        Il existe aussi parseInt() et parseFloat(), Int pour un numbre entier, float pour un numbre à virgule
-
-        https://stackoverflow.com/questions/48227631/specify-the-variable-type-in-the-prompt
-
-        */
+    exemple : 
+        var age = Number(prompt("Quel est votre âge ?"));
 
 
- 
- 
+    Il existe aussi parseInt() et parseFloat(), Int pour un nombre entier, Float pour un nombre à virgule
+
+    https://stackoverflow.com/questions/48227631/specify-the-variable-type-in-the-prompt
+
+*/
+

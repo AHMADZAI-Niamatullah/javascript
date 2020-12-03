@@ -1,15 +1,12 @@
-//alert("hello world !")
+var celsius = prompt("Entrez votre valeur en degrès Celsius : ");
 
-var tempC = prompt("Température en degrés Celcius à convertir en Farhenheit : ")
+fahrenheit = celsius * 9/5 + 32;
 
-tempF = (tempC * 1.8)+32;
-
-document.write("<h2>" + tempC + " °C = " + tempF + " °F. </h2> ");
+document.write("<h2>Votre valeur Celsius " + celsius + " convertie en Fahreiheit est égal à " + fahrenheit + "<h2>");
 
 
-/*var tempF = prompt(" Tepérature en Farhenheit à convertir en degrés Celcius : ")
+// var celsius = window.prompt("entrer degrès celsius");
 
-tempC = ( tempF * 0.5) + 0.5
- document.write("<h2>" + tempF + "°F = " + tempC + "°C. </h2> :")*/
+// fahrenheit = celsius * 9/5 +32;
 
-
+// document.write("conversion est de : " + celsius + "à " + fahrenheit);

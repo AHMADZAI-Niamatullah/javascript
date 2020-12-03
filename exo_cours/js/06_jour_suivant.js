@@ -1,95 +1,142 @@
-//alert('hello ');
+// var l = lundi;
+// var m = mardi;
+// var mer = mercredi;
+// var j = jeudi;
+// var v = vendredi;
+// var s = samedi;
+// var d = dimanche;
+
+// var utilisateur = window.prompt("Quel jour sommes-nous ?");
 
 
-/*var madate = new Date();
-var day = mydate.getDay();
-var month = mydate.getMonth();
-var year = mydate.getYear();
-var date = mydate.getDate();
-*/
 
-/*var samaine = jours
-
-if (samaine = jours )
-samaine = lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche;
-
-//var samaine =  Array("Lundi mardi, mercredi, jeudi, vendredi, samedi, dimanche");
-
-document.write(jours);
-function getSamaineNameFromSamaineNumber(samaineNumber){
-    var samainejoursNames = ["Lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
-}
-
-//document.write("+ Lundi +"  "+ mardi +"  "+ mercredi +"  "+ jeudi +"  "+ vendredi +"  "+ samedi +"   "+ dimanche +");
-*/
+// if(utilisateur = l){
+//     alert("Demain, nous serons Mardi");
+// } else {
+//     alert("Mauvais jour, veuillez recommencer");
+// }
 
 
-var jour = prompt ( "quel jour sommes-nous ?");
-if ( jour == "lundi"){
-    document.write("Demain nous serons mardi")
-}
 
-    else if ( jour == "mardi"){
-        document.write("Demain nous serons mercredi")  
-    }
+// Condition avec IF -----------------------------------------------------------------
 
 
-    else if ( jour == "mercredi"){
-        document.write("Demain nous serons jeudi")  
-    }
+// var jour = "jeudi";
+// var suivant = "vendredi";
+// var utilisateur = window.prompt('Quel jour somme-nous ? : ');
+
+//  if (utilisateur === jour ){
+//     alert("Demain nous serons le : " + suivant);
+// }else{
+//     alert("Mauvaise réponse");
+// }
 
 
-    else if ( jour == "jeudi"){
-        document.write("Demain nous serons vendredi")  
-    }
+// ---------------------------------------------------------------
 
 
-    else if ( jour == "vendredi"){
-        document.write("Bon weekend")  
-    }
+// Correction avec IF
+
+var jour = prompt("Quel jour sommes-nous ?");
+
+// if(jour === "lundi"){
+//     document.write("Nous serons Mardi");
+// } else if (jour === "mardi") {
+//     document.write("Nous serons Mercredi");
+// } else if (jour === "mercredi") {
+//     document.write("Nous serons Jeudi");
+// } else if (jour === "jeudi") {
+//     document.write("Nous serons Vendredi");
+// } else if (jour === "vendredi") {
+//     document.write("Bon Week end");
+// } else if (jour === "samedi") {
+//     document.write("Nous serons Dimanche");
+// } else if (jour === "dimanche") {
+//     document.write("Bon courage");
+// } else {
+//     document.write("Jour inconnu... veuillez entrer un jour de la semaine en minuscule");
+// }
 
 
-    else if ( jour == "samedi"){
-        document.write("Demain nous serons dimanche")  
-    }
+// SWITCH
 
 
-    else if ( jour == "dimanche"){
-        document.write("Bonne courage")  
-    }
-// } else{
-//   docuente.write ("jour inconnu........veuillez entrer un un jour de la samaine en minuscule" );
-//
+
+// var jour1 = "lundi";
+// var jour = ["mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
+// var utilisateur = window.prompt("Quel jour sommes-nous ?");
+
+
+// if(utilisateur == jour1){
+//     document.write("Demain nous serons le Mardi")
+// } 
+
+// else {
+//     switch(jour){
+//       case mardi :
+//       document.write("Demain nous serons le Mercredi");
+//       break;
+
+//       case mercredi :
+//       document.write("Demain nous serons le Jeudi");
+//       break;
+
+//       case jeudi :
+//       document.write("Demain nous serons le Vendredi");
+//       break;
+
+//       case vendredi :
+//       document.write("Demain nous serons le Samedi");
+//       break;
+
+//       case samedi :
+//       document.write("Demain nous serons le Dimanche");
+//       break;
+
+//       case dimanche :
+//       document.write("Demain nous serons le Lundi");
+//       break;
+
+//       default:
+//          alert("Le jour choisi n'existe pas");
+//       break;
+
+//     }
+// }
+
+
+//  Switch correction 
 
 switch (jour){
-    case "lundi":
-        console.log("demain nous serons mardi");
-        break;
+    case "lundi" :
+    document.write("Demain nous serons Mardi");
+    break;
 
-        case "mardi":
-        console.log("demain nous serons mercredi");
-        break;
+    case "mardi" :
+    document.write("Demain nous serons Mercredi");
+    break;
 
-        case "mercredi":
-        console.log("demain nous serons jeudi");
-        break;
+    case "mercredi" :
+    document.write("Demain nous serons Mercredi");
+    break;
 
-        case "jeudi":
-        console.log("demain nous serons vendredi");
-        break;
+    case "jeudi" :
+    document.write("Demain nous serons Vendredi");
+    break;
 
-        case "vendredi":
-        console.log("demain nous serons samedi");
-        break;
+    case "vendredi" :
+    document.write("Demain nous serons Samedi");
+    break;
 
-        case "samedi":
-        console.log("demain nous serons dimanche");
-        break;
+    case "samedi" :
+    document.write("Demain nous serons Dimanche");
+    break;
 
-        case "lundi":
-        console.log("demain nous serons mardi");
+    case "dimanche" :
+    document.write("Demain nous serons Lundi");
+    break;
 
-        
-        
+    default: 
+        document.write("Désolé, vérifiez l'ortogrphe des jours")
 
 }

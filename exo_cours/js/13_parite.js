@@ -1,66 +1,35 @@
-//alert('test');
-
-
-/*var nb = prompt("saisir un nombre");
-
-if(nb % 2 == 0){
-    document.write("Ce nombre est pair");
-
-}else{
-    document.write("Ce nombre est impair");
-}
-*/
-
-
-/*
-for (var nb = 1;  nb <= 10; nb++){
-    if( nb % 2 === 0){
-        document.write("nb" + '' + "est pair");
-    
-    }else if( nb % 3 === 0){
-        document.write( "nb" + '' + "est impair")
-    
-    }else{
-        document.write("erreur");
-    }
-}
-*/
+// for (var i = 1; i <= 10; i++) {
+//     if (i % 2 === 0) {
+//     document.write("<p>" + i + " est pair </p>");
+//  } else {
+//     document.write("<p>" + i + " est impair </p> ");
+//  }  
+// }
 
 
 
-/*for (var i = 1; i <= 10; i++) {
-    if (i % 2 === 0) {
-    console.log(i + " est pair");
+// var chiffre = parseInt(prompt("Choisir un nombre entier"));
+// var chiffreMax = (chiffre + 10);
 
-}else{
-    document.write("<h3>" + i + "est impair </h3>");
-}
+// while(chiffre <= chiffreMax) {
+//     if(chiffre % 2 === 0) {
+//         document.write("<p>" + chiffre + " est pair </p>")
+//     } else {
+//         document.write("<p>" + chiffre + " est impair </p>")
+//     }
+//     chiffre++;
+// }
 
-}
-*/
 
-/*var chiffre = parseInt(prompt("choisir un nombre entier"));
-var chiffreMax = (chiffre + 10);
-while (chiffre <= chiffreMax){
-    if (chiffre % 2 === 0){
-        document.write("<h3>" + chiffre + "est pair </h3>");
-    
-    }else{
-        document.write("<h3>" + chiffre + "est impair </h3>");
-    }
-    chiffre++;
-}
-*/
+
 
 var nbUser = parseInt(prompt("Ton chiffre ?"));
-var nbUserMax = (nbUser + 5);
-for (var tour = nbUser; tour <= nbUserMax; tour++){
+var  nbUserMax = (nbUser + 5);
 
-    if (tour % 2 === 0){
-        document.write("<h3>" + tour + "est pair </h3>");
-    
-    }else{
-        document.write("<h3>" + tour + "est impair </h3>");
+for(var tour = nbUser; tour < nbUserMax; tour++) {
+    if(tour % 2 === 0) {
+        document.write("<p>" + tour + " est pair </p>")
+    } else if (tour % 2 != 0) {
+        document.write("<p>" + tour + " est impair </p>")
     }
 }
-    

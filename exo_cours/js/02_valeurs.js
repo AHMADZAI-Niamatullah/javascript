@@ -1,30 +1,24 @@
 var a = 2;
-resultat = a;
-console.log("le resultat de la var a  est  = a " + resultat);
-var a = 2;
-resultat = a - 1;
-console.log("le resultat de ' a = a - 1 ' est = à " + resultat);
-var a = 1;
-resultat = a++;
-console.log("Le resultat de 'a' est = a " + a);
-var b = 8;
-resultat = b;
-console.log("le resultat de 'b' est = a " + resultat)
-var b = 8;
-resultat = b += 2;
-console.log("le resultat de ' b+= 2 ' est = à " + resultat);
+var a = a - 1;
+
+a++;
+console.log(a);
+
+ var b = 8;
+ b += 2;
+ console.log("(var b) Le résultat est de :", b);
+
 var c = a + b * b;
-resultat = c ;
-console.log("le resultat de ' c = a + b * b ' est = a " + c);
+console.log("(var c) Le résultat est de :", a + b * b);
+
 var d = a * b + b;
-resultat = d;
-console.log("Le resultat de ' c = a + b * b ' est = a " + d);
+console.log("(var d) Le résultat est de :", a * b + b);
+
 var e = a * (b + b);
-resultat = e ;
-console.log( "Le resultat de ' e = a * (b + b) ' est = a " + e);
+console.log("(var e) Le résultat est de :", a * (b + b));
+
 var f = a * b / a;
-resultat = f ;
-console.log( "Le resultat de ' f = a * b / a' est = a " + f);
+console.log("(var f) Le résultat est de :", a * b / a);
+
 var g = b / a * a;
-resultat = g;
-console.log( "Le resultat de 'g = b / a * a' est = a " + g);
+console.log("(var g) Le résultat est de :", b / a * a);
