@@ -1,0 +1,200 @@
+body{
+    background-color: bisque;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+
+
+
+#container{
+    background-color: gray;
+    padding: 10px 50px;
+}
+
+h1{
+    text-align: center;
+}
+
+.infos{
+    display: inline-block;
+    width: 25%;
+
+}
+
+.infos input{
+    width: 23vh;
+    margin-top: 5px;
+    border: 1px solid black;
+}
+
+.clear{
+    clear: both;
+}
+
+
+.nfacture{
+    float: right;
+    margin-top: 110px;
+}
+
+.nfacture label{
+    padding: 10px;
+}
+
+
+
+#number{
+    width: 4.6vh;
+    border: 1px solid black;
+}
+
+#field{
+    border: 1px solid black;
+}
+
+.clear{
+    clear: both;
+}
+
+/* fin de header*/
+
+
+
+
+/* section central */
+
+.central{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+.search{
+    border: 1px solid black;
+}
+.emeteur{
+    width: 30%;
+}
+
+.emeteur input{
+    width: 23.2vh;
+    border: 1px solid black;
+    margin-top: 5px;
+    background-color: lightgray;
+}
+
+.emeteur option{
+    width: 20.8vh;
+}
+
+
+
+.expediteur{
+    width: 30%;
+    margin-left: 68%;
+    
+}
+
+.expediteur input{
+    width: 23.2vh;
+    border: 1px solid black;
+    margin-top: 5px;
+    background-color: lightgray;
+   
+}
+
+.expediteur option{
+    width: 20.8vh;
+}
+
+.expediteur label{
+    word-spacing: 2rem;
+}
+
+.clear{
+    clear: both;
+}
+
+/* fin de section central*/
+
+
+
+/* section details*/
+
+.details{
+    margin-top: 80px;   
+}
+
+
+
+.details h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+
+table, th{
+    border: 1px solid black;
+    background-size: cover;
+    height: 20px;
+  }
+
+  tbody td{
+      border: 1px solid black;
+  }
+
+
+table th{
+    font-size: 25px;
+    height: 50px;
+}
+
+.search1 option{
+    width: 23vh;
+    margin: 2px;
+    border: 1px solid black;
+}
+
+.quantite{
+    width: 23vh;
+    margin: 2px;
+    border: 1px solid black;
+    text-align: right;
+}
+
+
+tfoot{
+    text-align: right;
+}
+
+.resultat{
+    border: 1px solid black;
+}
+
+
+.total{
+    margin-top: 80px;
+    text-align: left;
+   
+    font-size: 20px;
+}
+
+.fin{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.total input{
+    border: none;
+    background-color: gray;
+}

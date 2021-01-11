@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eval JS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--lien vers le style.css-->
+</head>
+<body>
+
+    <header>
+        <h1>FACTURE</h1>
+
+                <div class="infos">
+                    <input type="text" class="info1" value="Buildvia" placeholder="Nom de la société émettrice">
+                    <input type="text" class="info2" value="34 rue des marchands , 78300 , poissy" placeholder="Adresse de la société">
+                    <input type="text" class="inof3" value="07.58.85.74.24" placeholder="Entrez un numéro de téléphone valide">
+                    <input type="email" class="info4" value="Ahamdzai.Niamatullah@outlook.com" placeholder="Adresse de messagerie">
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="nfacture">
+                    <label for="text">N° DE FACTURE </label>
+                    <input type="numero" id="number" placeholder="01">
+                    <br>
+                    <label for="date" id="field1">DATE : </label>
+                    <input type="date"  id="field">
+                </div>
+
+           
+             <div class="clear"></div>
+    </header><!--fin de header-->
+
+
+    <section class="central">
+
+        <div class="emeteur">
+            <p><strong>À :</strong></p>
+            
+        <form action="index.html" method="POST">
+            <select id="recherche" onchange="handleClients()">   
+                <option  value="client"> Nouveau client</option>
+                <option  value="netscape">Netscape 2.0</option>
+                <option  value="production">You and I production</option>
+                <option  value="unity">Starc raft Unity</option>
+                <option  value="godus">Godus</option>
+            </select>
+                <input id="text0" type="text"   placeholder="Nom de la société">
+                <input id="nom0" type="text"    placeholder="Nom">
+                <input id="rue0" type="text"    placeholder="Rue">
+                <input id="code0" type="text"   placeholder="Code postal, ville">
+                <input id="numero0" type="tel" placeholder="Numéro de téléphone">
+        </form>
+        </div>
+
+       
+        <div class="expediteur">
+            <p><strong>EXPÉDIER À :</strong></p>
+
+        <form action="index.html" method="POST">
+            <select class="search">  
+                <option value="client"> Nouveau client</option>
+                <option value="cabinet">Cabinet Gerard</option>
+                <option value="corporation">Putrovski corporation</option>
+                <option value="family">Chinchan family</option>
+                <option value="main">La main invisible</option>
+            </select>
+                <input type="text" placeholder="Nom de la société">
+                <input type="text" placeholder="Nom">
+                <input type="text" placeholder="Rue">
+                <input type="text" placeholder="Code postal, ville">
+                <input type="text" placeholder="Numéro de téléphone">
+        </form>
+
+        </div>
+      
+    </section>
+    <!--fin section central-->
+
+    <div class="clear"></div>
+
+    <div class="details">
+        <h2>Détails des produits facturés</h2>
+
+     <div class="clear"></div>
+        <table class="tableau">
+            <thead>
+                <tr>
+                  <th>Code produit</th>
+                  <th>Libellé produit</th>
+                  <th>Prix-Unitaire en euros</th>
+                  <th>Quantité commandée</th>
+                  <th>Montant en euros</th>
+                </tr>
+            </thead>
+            <tbody>
+               <tr>
+                    <td>
+                            <select class="search1" id='searchSelect1' onchange="handleSearch1()">  
+                                <option value=""></option>
+                                <option value="codeProduit1" >01</option>
+                                <option value="codeProduit2" >02</option>
+                                <option value="codeProduit3" >04</option>
+                                <option value="codeProduit5" >05</option>
+                            </select>
+                    </td>
+                   <td><p id='row1_label'></p></td>
+                   <td><p id='row1_price'></p></td>
+                   <td><input type="text" class="quantite" placeholder="0" onchange="handleQuantity1(event)"></td>
+                   <td><p id="row1_total"></p></td>
+               </tr>
+               <tr>
+                   <td>
+                    <select class="search1">  
+                        <option value=""></option>
+                        <option value="codeProduit" id="produit6">001</option>
+                        <option value="codeProduit" id="produit7">002</option>
+                        <option value="codeProduit" id="produit8">003</option>
+                        <option value="codeProduit" id="produit9">004</option>
+                        <option value="codeProduit" id="produit10">005</option>
+                    </select>
+                   </td>
+                   <td></td>
+                   <td></td>
+                   <td><input type="text" class="quantite" placeholder="0"></td>
+                   <td></td>
+               </tr>
+               <tr>
+                   <td>
+                    <select class="search1">  
+                        <option></option>
+                        <option value="codeProduit" id="produit11">0001</option>
+                        <option value="codeProduit" id="produit12">0002</option>
+                        <option value="codeProduit" id="produit13">0003</option>
+                        <option value="codeProduit" id="produit14">0004</option>
+                        <option value="codeProduit" id="produit15">0005</option>
+                    </select>
+                   </td>
+                   <td></td>
+                   <td></td>
+                   <td><input type="text" class="quantite" placeholder="0"></td>
+                   <td></td>
+               </tr>
+               <tr>
+                   <td>
+                    <select class="search1">  
+                        <option></option>
+                        <option value="codeProduit" id="produit16">00001</option>
+                        <option value="codeProduit" id="produit17">00002</option>
+                        <option value="codeProduit" id="produit18">00003</option>
+                        <option value="codeProduit" id="produit19">00004</option>
+                        <option value="codeProduit" id="produit20">00005</option>
+                    </select>
+                   </td>
+                   <td></td>
+                   <td></td>
+                   <td><input type="text" class="quantite" placeholder="0"></td>
+                   <td></td>
+               </tr>
+            </tbody>    
+        </table> 
+    </div>
+
+<div class="clear"></div>
+
+    <div class="details2">
+
+        <table class="tableau2">
+
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="count">SOUS-TOTAL</td>
+                    <td class="resultat"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="count">T.V.A. 20,00%</td>
+                    <td class="resultat"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="count">PORT & MANUTENTION</td>
+                    <td class="resultat"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="count">TOTAL DU(TOTAL TTC) </td>
+                    <td class="resultat"></td>
+                </tr>
+            </tbody>  
+        </table>
+    </div>
+<div class="clear"></div>
+    <section class="total">
+        <form action="index.html" method="POST">
+         <label for="text"> Veuillez rédiger tous les chèques è l'ordre de </label>
+         <input type="text" id="nom" placeholder="Nom de la societe"><br>
+         <label for="text">Pour toute question concernant cette facture, veillez contacter : DUPONT au</label><br>
+         <input type="numero" id="numero" placeholder="Numéro de téléphone">
+         <label for="addresse">ou à l'addresse</label>
+         <input type="email" id="mail" placeholder="Adresse Email">
+        </form>
+        <p class="fin">Nous vous remercions de votre confiance</p>
+     </section>
+
+     <button onclick="window.print()">Imprimer cette page</button>
+ </div>
+
+
+<script type="text/javascript" src="js/script.js"></script>
+
+<script>
+    function handleClients(){
+        const value = document.getElementById('recherche').value;
+
+        if(value === 'client'){
+            document.getElementById('text0').setAttribute('value', '1');
+            document.getElementById('nom0').setAttribute('value', 'test value');
+            document.getElementById('rue0').setAttribute('value', 'test value');
+            document.getElementById('code0').setAttribute('value', 'test value');
+            document.getElementById('numero0').setAttribute('value', 'test value');         
+        }
+        if(value === 'netscape'){
+            document.getElementById('text0').setAttribute('value', '2');
+            document.getElementById('nom0').setAttribute('value', 'test value');
+            document.getElementById('rue0').setAttribute('value', 'test value');
+            document.getElementById('code0').setAttribute('value', 'test value');
+            document.getElementById('numero0').setAttribute('value', 'test value');
+        }
+        if(value === 'production'){
+            document.getElementById('text0').setAttribute('value', '3');
+            document.getElementById('nom0').setAttribute('value', 'test value');
+            document.getElementById('rue0').setAttribute('value', 'test value');
+            document.getElementById('code0').setAttribute('value', 'test value');
+            document.getElementById('numero0').setAttribute('value', 'test value');
+        }
+        if(value === 'unity'){
+            document.getElementById('text0').setAttribute('value', '4');
+            document.getElementById('nom0').setAttribute('value', 'test value');
+            document.getElementById('rue0').setAttribute('value', 'test value');
+            document.getElementById('code0').setAttribute('value', 'test value');
+            document.getElementById('numero0').setAttribute('value', 'test value');
+        }
+        if(value === 'godus'){
+            document.getElementById('text0').setAttribute('value', '5');
+            document.getElementById('nom0').setAttribute('value', 'test value');
+            document.getElementById('rue0').setAttribute('value', 'test value');
+            document.getElementById('code0').setAttribute('value', 'test value');
+            document.getElementById('numero0').setAttribute('value', 'test value');
+        }
+    }
+</script>
+<script>
+    function handleSearch1(){
+        const searchVal1 = document.getElementById('searchSelect1').value;
+
+        if(searchVal1 === 'codeProduit1'){
+            document.getElementById("row1_label").innerHTML = "1";
+            document.getElementById("row1_price").innerHTML = "150";
+        }
+        if(searchVal1 === 'codeProduit2'){
+            document.getElementById("row1_label").innerHTML = "2";
+            document.getElementById("row1_price").innerHTML = "200";
+        }
+        if(searchVal1 === 'codeProduit3'){
+            document.getElementById("row1_label").innerHTML = "3";
+            document.getElementById("row1_price").innerHTML = "300";
+        }
+        if(searchVal1 === 'codeProduit4'){
+            document.getElementById("row1_label").innerHTML = "4";
+            document.getElementById("row1_price").innerHTML = "400";
+        }
+        if(searchVal1 === 'codeProduit5'){
+            document.getElementById("row1_label").innerHTML = "5";
+            document.getElementById("row1_price").innerHTML = "500";
+        }
+    
+        
+    }
+</script>
+
+<script>
+    function handleQuantity1(event){
+        const quantity = event.target.value;
+        const price = document.getElementById("row1_price").innerHTML;
+
+        const total = price * quantity;
+
+        document.getElementById("row1_total").innerHTML = total;
+        
+    }
+</script>
+</body>
+</html>

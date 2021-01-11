@@ -14,7 +14,7 @@
 
 // CORRECTION 
 
-var moyenne = parseFloat(prompt("Quelleest votre moyenne"));
+var moyenne = parseFloat(prompt("Quelle est votre moyenne"));
 
 if(moyenne < 10){
     document.write("Recalé");

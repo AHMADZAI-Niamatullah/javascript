@@ -1,0 +1,191 @@
+body{
+    margin: auto 100px;
+    background-color: gray;
+}
+
+header h1{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+
+.infos{
+    float: left;
+    width: 30%;
+
+}
+
+.infos input{
+    width: 32vh;
+    margin-top: 5px;
+    border: 2px solid black;
+}
+
+.nfacture{
+    float: right;
+}
+
+.nfacture label{
+    padding: 10px;
+}
+
+.clear{
+    clear: both;
+}
+
+#number{
+    width: 4.6vh;
+    border: 1px solid black;
+    margin-bottom: 2px;
+}
+
+#field{
+    border: 1px solid black;
+}
+
+
+/* fin de header*/
+
+
+/* section central */
+
+.central{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.search{
+    border: 1px solid black;
+}
+.emeteur{
+    width: 30%;
+}
+
+.emeteur input{
+    width: 31.4vh;
+    border: 1px solid black;
+    margin-top: 5px;
+    background-color: lightgray;
+}
+
+
+.emeteur option{
+    width: 29vh;
+}
+
+
+
+.expediteur{
+    width: 30%;
+    margin-left: 63%;
+}
+
+.expediteur input{
+    width: 31.4vh;
+    border: 1px solid black;
+    margin-top: 5px;
+    background-color: lightgray;
+   
+}
+
+.expediteur option{
+    width: 29vh;
+}
+
+
+.clear{
+    clear: both;
+}
+
+/* fin de section central*/
+
+ h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.tableau{
+
+    display: inline-block;
+    border-collapse: collapse;  
+}
+
+.tableau th, td{
+    border: 1px solid black;
+    background-size: cover;
+    height: 40px;
+    width: 35vh;
+  }
+
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+  .search1 option{
+    width: 34vh;
+    border: 1px solid black;
+}
+
+.quantite{
+    width: 34vh;
+    margin: 2px;
+    border: 1px solid black;
+    text-align: right;
+}
+
+
+.tableau2{
+    border-collapse: collapse;
+    float: right;
+    margin-top: 80px;
+    border-top: 1px solid black;
+}
+
+.tableau2 td{
+    height: 40px;
+    border: none;
+}
+
+.tableau2 tbody .resultat{
+    border: 1px solid black;
+}
+
+.count{
+    text-align: right;
+}
+
+
+.clear{
+    clear: both;
+}
+
+
+.total{
+    margin-top: 80px;
+    text-align: left;
+    font-size: 25px;
+}
+
+.fin{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.total input{
+    border: none;
+    background-color: gray;
+    text-align: center;
+}
+
+#mail{
+    width: 28vh;
+}
+p{
+    text-align: center;
+}
+
